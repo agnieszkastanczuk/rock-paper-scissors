@@ -1,0 +1,136 @@
+:root{
+    --orange: #DA8751;
+    --yellow: #FCBA5C;
+    --blue: #879AA9;
+    --green: #A7AEA5 ;
+    --pink: #D4A8B9;
+    --pink2: #B297A1;
+    --dark-green: #676F63 ;
+    --font-color: #3F4C5C;
+    --background-color: #E7D4C1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button{
+    border-style: none;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 2rem;
+    color: var(--font-color);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+#rock{
+    background-color: var(--orange);
+}
+
+#rock :hover, #paper :hover, #scissors :hover, #lizard :hover, #spock :hover{
+    background-color: var(--font-color);
+}
+
+#paper{
+    background-color: var(--yellow);
+}
+
+#scissors{
+    background-color: var(--blue);
+}
+
+#lizard, #spock{
+    display: none;
+}
+
+#lizard{
+    background-color: var(--green);
+}
+
+#spock{
+    background-color: var(--pink);
+}
+
+#rules{
+    display: none;
+}
+
+img{
+    height: 10rem;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-button {
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: var(--blue);
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .toggle-button-ident {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2s ease-in-out;
+  }
+  
+  #result-user{
+    color: var(--dark-green);
+  }
+
+  #result-computer{
+    color: var(--pink2);
+  }
+
+  .options{
+    display: flex;
+    align-items: center;
+  }
+
+.options p{
+    padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    button {
+        width: 6rem;
+        height: 6rem;
+        margin: 0.3rem;
+    }
+    img{
+        height: 6rem;
+    }
+    .bbt-buttons{
+        padding-bottom: 2rem;
+    }
+    #rules{
+        font-size: 0.7rem;
+    }
+  }
+  

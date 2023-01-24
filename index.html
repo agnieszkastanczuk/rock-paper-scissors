@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+</head>
+<body class="classic">
+    <h2>Choose your weapon! </h2>
+    <p id="rules">It's simple. 
+        <br>"Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors." -Sheldon Cooper</p>      
+    <div class="buttons">
+        <button onclick="play(0)" id="rock">
+            <img src="/img/rock.png">
+            Rock</button>
+        <button onclick="play(1)" id="paper">
+            <img src="/img/paper.png">
+            Paper</button>
+        <button onclick="play(2)" id="scissors">
+            <img src="/img/scissors.png">
+            Scissors</button>
+        <div class="bbt-buttons"> 
+            <button onclick="play(3)" id="lizard">
+                <img src="/img/lizard.png">
+                Lizard</button>    
+            <button onclick="play(4)" id="spock">
+                <img src="/img/spock.png">
+                Spock</button>
+        </div>   
+    </div>
+    <div>
+        Coomputer's choice:
+        <span id="computer-choice">
+            ...
+        </span>
+    </div>
+    <div><h2 id="result">Choose your weapon!</h2></div>
+    <div id="result-container">
+        <div id="result-user">You: <span id="wins">0</span></div>
+        <div id="result-draws">Draws: <span id="draws">0</span></div>
+        <div id="result-computer">Computer: <span id="losses">0</span></div>
+    </div>
+    <div class="options">
+        <p>Classic Mode</p>
+        <div class="toggle-button">
+            <div class="toggle-button-ident"></div>
+        </div>
+        <p>Classic mode</p>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
